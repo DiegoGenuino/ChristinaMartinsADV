@@ -573,14 +573,14 @@ export const siteConfig = {
       "height": 41,
       "alt": "Google"
     },
-    "source": "google",
+    "source": "manual",
     "maxRating": 5,
     "ratingUnavailableLabel": "Avaliação não disponível",
     "orderingNotice": "Avaliações selecionadas por relevância.",
     "google": {
       "placeId": "ChIJ52kDI9pZzpQRlUzGkyAN83Q",
       "limit": 3,
-      "reviewsUrl": "https://share.google/IJa9eUEXaCCS09uLJ"
+      "reviewsUrl": "https://maps.app.goo.gl/weuAh6TwkSQsSGgBA"
     },
     "fallbacks": {
       "quote": "Comentário não disponível",
@@ -592,12 +592,40 @@ export const siteConfig = {
     },
     "manualItems": [
       {
-        "quote": "Excelente advogada. Além de ser super profissional, confiável, sempre atenciosa e esclareceu todas as minhas dúvidas.",
-        "name": "Cliente Verificado",
-        "details": "Fonte: Cronoshare · relato fornecido",
+        "quote": "Excelente profissional super recomendo, infelizmente só não foi mais rápido por conta dos órgãos responsáveis que trabalham na velocidade reduzida.",
+        "name": "Claudio Fonseca",
+        "details": "Avaliação no Google Maps",
         "rating": 5,
-        "avatar": "/images/google-icon.png",
-        "avatarPosition": "center"
+        "avatar": "/images/review-claudio-fonseca.jpg",
+        "avatarPosition": "center",
+        "publishedAt": "2025-08-07T17:16:28.979369+00:00",
+        "publishedAtLabel": "07/08/2025",
+        "googleMapsUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21oamQwRjVlR3BXVm1JNFEwUkNWbXRtYW5sbVJsRRAB!2m1!1s0x0:0x74f30d2093c64c95!3m1!1s2@1:CAIQACodChtycF9oOmhjd0F5eGpWVmI4Q0RCVmtmanlmRlE%7C%7C?hl=pt-BR",
+        "authorProfileUrl": "https://www.google.com/maps/contrib/104458448814762623269?hl=pt-BR"
+      },
+      {
+        "quote": "O atendimento da Dra Cristina é muito bom, , O seu trabalho e muito sério, ela trabalha com muita responsabilidade.",
+        "name": "Marta Maria De Sousa Queiroz",
+        "details": "Avaliação no Google Maps",
+        "rating": 5,
+        "avatar": "/images/review-marta-maria.jpg",
+        "avatarPosition": "center",
+        "publishedAt": "2025-08-04T22:49:00.234227+00:00",
+        "publishedAtLabel": "04/08/2025",
+        "googleMapsUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25KRFRGWkRNVGxXUkV0bGFWZFVlRmxQUlVVMU1YYxAB!2m1!1s0x0:0x74f30d2093c64c95!3m1!1s2@1:CAIQACodChtycF9oOnJDTFZDMTlWREtlaVdUeFlPRUU1MXc%7C%7C?hl=pt-BR",
+        "authorProfileUrl": "https://www.google.com/maps/contrib/115947485013454712052?hl=pt-BR"
+      },
+      {
+        "quote": "Uma ótima advogada passa informações explicações técnicas, sem teatros direto aos assuntos",
+        "name": "Emerson Romão",
+        "details": "Avaliação no Google Maps",
+        "rating": 5,
+        "avatar": "/images/review-emerson-romao.jpg",
+        "avatarPosition": "center",
+        "publishedAt": "2025-08-04T20:10:52.904808+00:00",
+        "publishedAtLabel": "04/08/2025",
+        "googleMapsUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2prd1NUaDRVRkYyT1hZeFQzQTJXVEJ2Ykd3d09VRRAB!2m1!1s0x0:0x74f30d2093c64c95!3m1!1s2@1:CAIQACodChtycF9oOjkwSTh4UFF2OXYxT3A2WTBvbGwwOUE%7C%7C?hl=pt-BR",
+        "authorProfileUrl": "https://www.google.com/maps/contrib/104891241479254419578?hl=pt-BR"
       }
     ]
   },
@@ -664,10 +692,6 @@ export const siteConfig = {
       {
         "href": "https://share.google/IJa9eUEXaCCS09uLJ",
         "label": "Google Maps"
-      },
-      {
-        "href": "https://www.cronoshare.com.br/servicos/advogado-trabalhista/sao-paulo/sao-paulo/b/centro",
-        "label": "Fonte do depoimento"
       }
     ],
     "copyrightSuffix": "Todos os direitos reservados.",

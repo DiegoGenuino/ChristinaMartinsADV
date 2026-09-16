@@ -284,294 +284,486 @@ export interface SiteConfig {
   deployment: DeploymentConfig;
 }
 
-const practiceDescription = 'Defesa em todas as fases — inquérito, ação penal e recursos — em casos de ocultação e dissimulação de ativos.';
-
 export const siteConfig = {
-  identity: {
-    siteName: 'Ferreira Defesa',
-    legalName: 'Ferreira Defesa',
-    professionalName: 'Dr. Eduardo Ferreira',
-    professionalRole: 'Advogado criminalista em Direito Penal Econômico',
-    professionalDescription: 'Advogado criminalista com mais de 15 anos de atuação exclusiva em Direito Penal Econômico. Formado pela USP, com especialização pela FGV Direito SP. Mais de 2.100 casos encerrados e +R$22M em ativos recuperados para clientes.',
-    professionalImage: '/images/eduardo-ferreira-560.webp',
-    logo: {
-      src: '/images/eduardo-ferreira-logo.svg',
-      width: 165,
-      height: 12,
-      alt: 'Eduardo Ferreira',
+  "identity": {
+    "siteName": "Christina Martins Advogada",
+    "legalName": "Christina Aguiar Martins Advogada",
+    "professionalName": "Christina Aguiar Martins",
+    "professionalRole": "Advogada",
+    "professionalDescription": "Advogada especialista com atuação focada em Direito Previdenciário (INSS, LOAS e Aposentadorias), Direito do Trabalho e Direito de Família, oferecendo suporte jurídico humanizado e estratégico de forma presencial e online para todo o Brasil.",
+    "professionalImage": "/images/christina-martins-1080.webp",
+    "logo": {
+      "src": "/images/christina-martins-logo.svg",
+      "width": 660,
+      "height": 96,
+      "alt": "Christina Aguiar Martins — Advogada"
     },
-    registration: 'OAB/SP nº 000.000',
+    "registration": "OAB/SP 360.536"
   },
-  contact: {
-    whatsappUrl: 'https://wa.me/5511999999999',
-    primaryCtaLabel: 'Falar com especialista',
+  "contact": {
+    "whatsappUrl": "https://wa.me/5511930708264?text=Olá%2C%20Dra.%20Christina.%20Gostaria%20de%20informações%20sobre%20o%20atendimento%20jurídico.",
+    "primaryCtaLabel": "Falar com a advogada"
   },
-  header: {
-    brandHref: '#inicio',
-    brandLabel: 'Ferreira Defesa — início',
-    primaryNavigationLabel: 'Navegação principal',
-    mobileNavigationLabel: 'Navegação mobile',
-    menuOpenLabel: 'Abrir menu',
-    links: [
-      { href: '#sobre', label: 'Quem somos' },
-      { href: '#especialidades', label: 'Especialidades' },
-      { href: '#diferenciais', label: 'Por que nós' },
-      { href: '#faq', label: 'Dúvidas' },
-    ],
+  "header": {
+    "brandHref": "#inicio",
+    "brandLabel": "Christina Martins Advogada — início",
+    "primaryNavigationLabel": "Navegação principal",
+    "mobileNavigationLabel": "Navegação mobile",
+    "menuOpenLabel": "Abrir menu",
+    "links": [
+      {
+        "href": "#sobre",
+        "label": "A advogada"
+      },
+      {
+        "href": "#especialidades",
+        "label": "Áreas de atuação"
+      },
+      {
+        "href": "#diferenciais",
+        "label": "Atendimento"
+      },
+      {
+        "href": "#faq",
+        "label": "Dúvidas"
+      }
+    ]
   },
-  hero: {
-    id: 'inicio',
-    image: {
-      src: '/images/hero-legal-1672.webp',
-      width: 1672,
-      height: 942,
-      alt: '',
-      srcset: [
-        { src: '/images/hero-legal-960.webp', width: 960 },
-        { src: '/images/hero-legal-1672.webp', width: 1672 },
+  "hero": {
+    "id": "inicio",
+    "image": {
+      "src": "/images/christina-martins-hero-studio-640.webp",
+      "width": 640,
+      "height": 1138,
+      "alt": "Dra. Christina Aguiar Martins",
+      "srcset": [
+        {
+          "src": "/images/christina-martins-hero-studio-640.webp",
+          "width": 640
+        }
       ],
-      sizes: '100vw',
+      "sizes": "(max-width: 780px) 100vw, min(64vw, 1000px)"
     },
-    trust: {
-      text: '100% clientes atendidos com excelência',
-      avatars: ['/images/avatar-2.webp', '/images/avatar-1.webp', '/images/avatar-3.webp'],
+    "trust": {
+      "text": "Presencial em São Paulo · Online em todo o Brasil",
+      "avatars": []
     },
-    title: [
-      { text: 'Defesa Estratégica em ' },
-      { text: 'Crimes Financeiros', highlighted: true },
-      { text: ' e ' },
-      { text: 'Corrupção', highlighted: true },
+    "title": [
+      {
+        "text": "Orientação para seus direitos "
+      },
+      {
+        "text": "previdenciários",
+        "highlighted": true
+      },
+      {
+        "text": ", "
+      },
+      {
+        "text": "trabalhistas",
+        "highlighted": true
+      },
+      {
+        "text": " e de "
+      },
+      {
+        "text": "família.",
+        "highlighted": true
+      }
     ],
-    description: 'Atuação técnica e estratégica na defesa de empresários, executivos e pessoas investigadas em crimes financeiros complexos.',
-    primaryCtaLabel: 'Quero defesa de alto nível',
-    secondaryCta: { href: '#sobre', label: 'Conheça nossa atuação' },
-    scrollTarget: '#numeros',
-    scrollLabel: 'Ir para os números',
+    "description": "Um atendimento atento à sua história, com orientação clara sobre os caminhos jurídicos possíveis. Na Bela Vista, em São Paulo, e online em todo o Brasil.",
+    "primaryCtaLabel": "Conversar com a advogada",
+    "secondaryCta": {
+      "href": "#sobre",
+      "label": "Conheça minha atuação"
+    },
+    "scrollTarget": "#numeros",
+    "scrollLabel": "Conheça o atendimento"
   },
-  stats: {
-    id: 'numeros',
-    label: 'Resultados do escritório',
-    items: [
-      { value: '+R$22M', label: 'em ativos recuperados' },
-      { value: '+1.700', label: 'atos processuais realizados' },
-      { value: '97%', label: 'de avaliações positivas' },
-      { value: '+2.100', label: 'casos analisados' },
-    ],
+  "stats": {
+    "id": "numeros",
+    "label": "Informações do atendimento",
+    "items": [
+      {
+        "value": "4,9/5",
+        "label": "Nota no Google Maps · dossiê de 16/09/2026"
+      },
+      {
+        "value": "11",
+        "label": "Avaliações no Google Maps · dossiê de 16/09/2026"
+      },
+      {
+        "value": "São Paulo",
+        "label": "Atendimento presencial na Bela Vista"
+      },
+      {
+        "value": "Brasil",
+        "label": "Atendimento online em todo o país"
+      }
+    ]
   },
-  about: {
-    id: 'sobre',
-    image: {
-      src: '/images/eduardo-ferreira-560.webp',
-      width: 560,
-      height: 700,
-      alt: 'Dr. Eduardo Ferreira, advogado criminalista',
-      srcset: [
-        { src: '/images/eduardo-ferreira-560.webp', width: 560 },
-        { src: '/images/eduardo-ferreira-1122.webp', width: 1122 },
+  "about": {
+    "id": "sobre",
+    "image": {
+      "src": "/images/christina-martins-560.webp",
+      "width": 560,
+      "height": 700,
+      "alt": "Dra. Christina Aguiar Martins, advogada em São Paulo",
+      "srcset": [
+        {
+          "src": "/images/christina-martins-560.webp",
+          "width": 560
+        },
+        {
+          "src": "/images/christina-martins-1080.webp",
+          "width": 1080
+        }
       ],
-      sizes: '(max-width: 780px) calc(100vw - 34px), 392px',
+      "sizes": "(max-width: 780px) calc(100vw - 34px), 392px"
     },
-    cardName: 'Dr. Eduardo Ferreira',
-    cardDetail: 'Criminalista | nº 000.000',
-    eyebrow: 'Dr. Eduardo Ferreira',
-    credentials: [
-      { icon: 'lucide:circle-check', text: 'OAB/SP nº 000.000 — inscrito desde 2009' },
-      { icon: 'lucide:circle-check', text: 'Pós-graduado em Direito Penal Econômico — FGV Direito SP' },
-      { icon: 'lucide:circle-check', text: 'Membro da Comissão de Direito Penal Econômico OAB/SP' },
-    ],
+    "cardName": "Dra. Christina Aguiar Martins",
+    "cardDetail": "Advogada · OAB/SP 360.536",
+    "eyebrow": "Conheça a Dra. Christina Martins",
+    "credentials": [
+      {
+        "icon": "lucide:circle-check",
+        "text": "OAB/SP 360.536"
+      },
+      {
+        "icon": "lucide:circle-check",
+        "text": "Atuação em Previdenciário, Trabalho e Família"
+      },
+      {
+        "icon": "lucide:circle-check",
+        "text": "Escritório na Bela Vista, em São Paulo"
+      },
+      {
+        "icon": "lucide:circle-check",
+        "text": "Atendimento online em todo o Brasil"
+      }
+    ]
   },
-  practiceSection: {
-    id: 'especialidades',
-    title: 'Crimes que defendemos',
-    highlightedTitle: 'excelência',
-    description: 'Atuação técnica e especializada nas práticas mais complexas do Direito Penal Econômico. Cada área com histórico sólido de resultados.',
-    items: [
-      { icon: 'lucide:credit-card', title: 'Lavagem de dinheiro', description: practiceDescription },
-      { icon: 'lucide:file-text', title: 'Crimes Tributários', description: practiceDescription },
-      { icon: 'lucide:credit-card', title: 'Corrupção e Improbidade', description: practiceDescription },
-      { icon: 'lucide:credit-card', title: 'Fraudes Bancárias', description: practiceDescription },
-      { icon: 'lucide:credit-card', title: 'Evasão de Divisas', description: practiceDescription },
-      { icon: 'lucide:credit-card', title: 'Crimes Financeiros', description: practiceDescription },
-      { icon: 'lucide:credit-card', title: 'Gestão Fraudulenta', description: practiceDescription },
-      { icon: 'lucide:credit-card', title: 'Prevenção Corporativa', description: practiceDescription },
-    ],
+  "practiceSection": {
+    "id": "especialidades",
+    "title": "Áreas de",
+    "highlightedTitle": "atuação",
+    "description": "Orientação jurídica para diferentes momentos da sua vida, do acesso a benefícios às relações de trabalho e de família.",
+    "items": [
+      {
+        "icon": "lucide:shield-check",
+        "title": "Direito Previdenciário (INSS)",
+        "description": "Assessoria para concessão e revisão de benefícios do INSS, incluindo LOAS/BPC, Aposentadorias, Pensão por Morte, Auxílio-Doença e Aposentadoria por Invalidez."
+      },
+      {
+        "icon": "lucide:briefcase",
+        "title": "Direito do Trabalho",
+        "description": "Defesa dos direitos do trabalhador em rescisão contratual, justa causa indevida, cobrança de FGTS, acidentes de trabalho, horas extras, acúmulo de função e assédio moral."
+      },
+      {
+        "icon": "lucide:users",
+        "title": "Direito de Família e Sucessões",
+        "description": "Suporte jurídico sensível e atento em processos de divórcio, pensão alimentícia, guarda, inventário, União Homoafetiva e contratos de união estável."
+      }
+    ]
   },
-  urgencySection: {
-    id: 'quando-buscar-ajuda',
-    title: 'O problema raramente chega',
-    highlightedTitle: 'com aviso.',
-    description: 'Mas costuma deixar sinais. Uma intimação, uma diligência ou um bloqueio muda o cenário — e cada movimento seguinte merece ser compreendido antes de acontecer.',
-    closingText: 'Se uma dessas perguntas já faz parte do seu dia, o próximo passo é compreender o cenário com clareza e sigilo.',
-    ctaLabel: 'Conversar com sigilo',
-    listLabel: 'Perguntas para reconhecer quando buscar orientação jurídica',
-    items: [
-      { title: 'Chegou uma intimação', description: 'Antes de responder ou comparecer, entenda o alcance do chamado e como se preparar adequadamente.' },
-      { title: 'Você soube de uma investigação', description: 'A orientação inicial ajuda a identificar a fase do procedimento, os riscos e as medidas possíveis.' },
-      { title: 'Houve busca e apreensão', description: 'Documentos, equipamentos e registros da diligência precisam ser analisados com atenção desde o início.' },
-      { title: 'Bens ou contas foram bloqueados', description: 'É importante compreender a origem da medida, os valores envolvidos e os caminhos para contestá-la.' },
-      { title: 'Existe denúncia, prisão ou prazo para recurso', description: 'Prazos processuais exigem leitura técnica do caso e definição rápida dos próximos atos de defesa.' },
-    ],
+  "urgencySection": {
+    "id": "quando-buscar-ajuda",
+    "title": "Quando buscar",
+    "highlightedTitle": "orientação jurídica?",
+    "description": "Uma negativa do INSS, uma mudança no trabalho ou uma questão familiar pode trazer dúvidas. Entender os documentos e os prazos é um primeiro passo para avaliar a situação.",
+    "closingText": "Conte sua situação para que os próximos passos possam ser avaliados de forma individual.",
+    "ctaLabel": "Conversar sobre meu caso",
+    "listLabel": "Situações para buscar orientação jurídica",
+    "items": [
+      {
+        "title": "Benefício do INSS negado",
+        "description": "A decisão e os documentos ajudam a compreender os motivos da negativa e avaliar as alternativas cabíveis."
+      },
+      {
+        "title": "Dúvidas sobre aposentadoria ou BPC/LOAS",
+        "description": "O histórico de contribuições e as informações pessoais precisam ser analisados conforme o benefício pretendido."
+      },
+      {
+        "title": "Demissão ou direitos trabalhistas",
+        "description": "Contratos, recibos e registros da relação de trabalho ajudam a organizar a análise do caso."
+      },
+      {
+        "title": "Divórcio, guarda ou pensão alimentícia",
+        "description": "Questões familiares merecem uma avaliação cuidadosa dos fatos e dos interesses envolvidos."
+      },
+      {
+        "title": "Inventário ou união estável",
+        "description": "A documentação e o contexto familiar orientam a análise dos procedimentos possíveis."
+      }
+    ]
   },
-  differentialsSection: {
-    id: 'diferenciais',
-    titlePrefix: 'Por que a',
-    highlightedTitle: 'Ferreira Defesa',
-    titleSuffix: 'é sua melhor escolha?',
-    tabsLabel: 'Diferenciais da Ferreira Defesa',
-    ctaLabel: 'Solicitar diagnóstico criminal',
-    items: [
-      { icon: 'lucide:badge-check', title: 'Atuação exclusiva em crimes financeiros', description: 'Especialização total garante maior profundidade jurídica e estratégias mais eficazes para delitos econômicos complexos.' },
-      { icon: 'lucide:scale', title: 'Equipe técnica em Direito Penal Econômico', description: 'Conhecimento especializado para conduzir investigações e processos sensíveis com precisão em cada etapa.' },
-      { icon: 'lucide:user-round-check', title: 'Atendimento direto com o advogado responsável', description: 'Contato próximo com quem lidera a estratégia, garantindo decisões rápidas, claras e plenamente informadas.' },
-      { icon: 'lucide:lock-keyhole', title: 'Sigilo profissional absoluto e ética inabalável', description: 'Proteção rigorosa de informações, documentos e decisões em todas as fases do atendimento jurídico.' },
-      { icon: 'lucide:book-open-check', title: 'Estratégias alinhadas às jurisprudências recentes', description: 'Atualização contínua para construir teses consistentes e adequadas ao cenário jurídico de cada caso.' },
-      { icon: 'lucide:messages-square', title: 'Comunicação clara e acompanhamento contínuo', description: 'Você acompanha o andamento do caso com orientações objetivas, retorno próximo e transparência.' },
-    ],
+  "differentialsSection": {
+    "id": "diferenciais",
+    "titlePrefix": "Um atendimento com",
+    "highlightedTitle": "atenção",
+    "titleSuffix": "à sua história.",
+    "tabsLabel": "Como a Dra. Christina Martins atende",
+    "ctaLabel": "Agendar atendimento",
+    "items": [
+      {
+        "icon": "lucide:map-pin",
+        "title": "Presencial na Bela Vista",
+        "description": "Atendimento em São Paulo, na Rua Santo Amaro, 544, mediante agendamento."
+      },
+      {
+        "icon": "lucide:monitor",
+        "title": "Online em todo o Brasil",
+        "description": "Consultas e envio de documentos podem ser organizados à distância, conforme as necessidades do caso."
+      },
+      {
+        "icon": "lucide:messages-square",
+        "title": "Orientação em linguagem clara",
+        "description": "O atendimento busca tornar documentos, alternativas e próximos passos mais compreensíveis."
+      },
+      {
+        "icon": "lucide:files",
+        "title": "Análise individual do caso",
+        "description": "Fatos, documentos e prazos são considerados em conjunto para avaliar os caminhos jurídicos possíveis."
+      },
+      {
+        "icon": "lucide:lock-keyhole",
+        "title": "Ética e sigilo profissional",
+        "description": "As informações compartilhadas no atendimento são tratadas com cuidado e sigilo profissional."
+      }
+    ]
   },
-  processSection: {
-    id: 'como-funciona',
-    title: 'Um atendimento que transforma',
-    highlightedTitle: 'incerteza em próximos passos.',
-    description: 'Cada caso exige uma leitura própria. Estas etapas organizam o atendimento sem reduzir a estratégia a uma fórmula pronta.',
-    stepsLabel: 'Etapas do atendimento jurídico',
-    stepLabel: 'Etapa',
-    items: [
-      { title: 'Contato inicial confidencial', description: 'Você apresenta o contexto, as principais dúvidas e qualquer urgência que precise de atenção imediata.', detail: 'O primeiro contato serve para organizar informações e definir o que precisa ser analisado primeiro.' },
-      { title: 'Análise do caso e dos documentos', description: 'A equipe examina fatos, documentos, prazos e a fase processual para construir uma leitura técnica do cenário.', detail: 'Quando necessário, novos documentos e esclarecimentos são solicitados antes da recomendação.' },
-      { title: 'Definição da estratégia jurídica', description: 'As alternativas são explicadas com clareza, incluindo prioridades, próximos atos e possíveis desdobramentos.', detail: 'A estratégia considera as particularidades do caso e pode evoluir conforme surgem novas informações.' },
-      { title: 'Acompanhamento em cada fase', description: 'O cliente recebe orientações e atualizações relevantes durante a condução do trabalho jurídico.', detail: 'Comunicação próxima e linguagem objetiva ajudam a tornar decisões complexas mais compreensíveis.' },
-    ],
+  "processSection": {
+    "id": "como-funciona",
+    "title": "Do primeiro contato aos",
+    "highlightedTitle": "próximos passos.",
+    "description": "Cada situação tem suas particularidades. Conheça as etapas que orientam o atendimento jurídico.",
+    "stepsLabel": "Etapas do atendimento jurídico",
+    "stepLabel": "Etapa",
+    "items": [
+      {
+        "title": "Contato inicial",
+        "description": "Apresente sua situação pelo WhatsApp e informe se existe algum prazo em andamento.",
+        "detail": "O contato inicial permite organizar o agendamento e os documentos necessários."
+      },
+      {
+        "title": "Análise dos documentos",
+        "description": "A advogada avalia as informações e a documentação pertinentes ao caso.",
+        "detail": "Se necessário, serão solicitados documentos ou esclarecimentos complementares."
+      },
+      {
+        "title": "Orientação sobre alternativas",
+        "description": "Os caminhos possíveis, as condições do serviço e os próximos passos são explicados.",
+        "detail": "A definição do trabalho depende da análise individual e da contratação."
+      },
+      {
+        "title": "Acompanhamento jurídico",
+        "description": "Após a contratação, o atendimento segue conforme o serviço acordado.",
+        "detail": "Orientações e atualizações ajudam a acompanhar as etapas relevantes."
+      }
+    ]
   },
-  reviewsSection: {
-    enabled: true,
-    id: 'avaliacoes',
-    title: 'O que nossos clientes',
-    highlightedTitle: 'dizem',
-    platformLogo: { src: '/images/google-icon.png', width: 41, height: 41, alt: 'Google' },
-    source: 'google',
-    maxRating: 5,
-    ratingUnavailableLabel: 'Avaliação não disponível',
-    orderingNotice: 'Avaliações selecionadas por relevância.',
-    google: {
-      // O Place ID é público. A chave secreta fica em GOOGLE_PLACES_API_KEY.
-      placeId: '',
-      limit: 3,
-      reviewsUrl: '',
+  "reviewsSection": {
+    "enabled": true,
+    "id": "avaliacoes",
+    "title": "O que dizem sobre o",
+    "highlightedTitle": "atendimento",
+    "platformLogo": {
+      "src": "/images/google-icon.png",
+      "width": 41,
+      "height": 41,
+      "alt": "Google"
     },
-    fallbacks: {
-      quote: 'Comentário não disponível',
-      name: 'Usuário do Google',
-      details: 'Não disponível',
-      avatar: '/images/google-icon.png',
-      avatarPosition: 'center',
-      publishedAtLabel: 'Data não disponível',
+    "source": "google",
+    "maxRating": 5,
+    "ratingUnavailableLabel": "Avaliação não disponível",
+    "orderingNotice": "Avaliações selecionadas por relevância.",
+    "google": {
+      "placeId": "ChIJ52kDI9pZzpQRlUzGkyAN83Q",
+      "limit": 3,
+      "reviewsUrl": "https://share.google/IJa9eUEXaCCS09uLJ"
     },
-    manualItems: [
-      { quote: 'Excelente advogado, resolveu meu caso com rapidez e precisão. A atenção pessoal que recebi foi diferencial — nunca me senti desamparado durante o processo.', name: 'Carlos M.', details: 'Empresário, São Paulo', rating: 5, avatar: '/images/avatar-1.webp', avatarPosition: 'center 15%' },
-      { quote: 'Profissionalismo acima de tudo. Quando a situação parecia sem saída, a equipe encontrou uma tese que virou o jogo. Recomendo sem hesitar.', name: 'Ricardo T.', details: 'Diretor Financeiro, Rio de Janeiro', rating: 5, avatar: '/images/avatar-2.webp', avatarPosition: '62% 24%' },
-      { quote: 'O sigilo e a atenção ao cliente são reais. Cada dúvida foi respondida com clareza. Resultado: processo encerrado sem condenação. Gratidão enorme.', name: 'Ana P.', details: 'Executiva, Brasília', rating: 5, avatar: '/images/avatar-3.webp', avatarPosition: '76% 30%' },
-    ],
-  },
-  faqSection: {
-    id: 'faq',
-    eyebrow: 'Dúvidas frequentes',
-    title: 'Informação clara desde o',
-    highlightedTitle: 'primeiro contato',
-    description: 'Cada situação exige análise individual. Estas respostas ajudam a orientar os primeiros passos.',
-    ctaLabel: 'Falar sobre meu caso',
-    items: [
-      { question: 'Quando devo procurar um advogado criminalista?', answer: 'O ideal é buscar orientação assim que houver conhecimento de investigação, intimação, bloqueio de bens ou qualquer risco criminal. A atuação antecipada amplia as possibilidades estratégicas.' },
-      { question: 'O atendimento é sigiloso?', answer: 'Sim. Todas as conversas, documentos e informações são tratados sob sigilo profissional absoluto, desde o primeiro contato.' },
-      { question: 'O escritório atende fora de São Paulo?', answer: 'Sim. A atuação pode ocorrer em todo o Brasil, com acompanhamento presencial ou remoto conforme a necessidade do caso.' },
-      { question: 'Como funciona o primeiro diagnóstico?', answer: 'O primeiro contato serve para entender o contexto, identificar urgências e definir os próximos passos. Casos sensíveis recebem retorno prioritário.' },
-    ],
-  },
-  footer: {
-    eyebrow: 'Atendimento imediato e sigiloso',
-    title: 'Seu caso exige uma defesa',
-    highlightedTitle: 'à altura.',
-    description: 'Atuação estratégica em Direito Penal Econômico, com discrição, profundidade técnica e acompanhamento pessoal.',
-    links: [
-      { href: '#sobre', label: 'Quem somos' },
-      { href: '#especialidades', label: 'Especialidades' },
-      { href: '#diferenciais', label: 'Diferenciais' },
-      { href: '#faq', label: 'Dúvidas' },
-    ],
-    copyrightSuffix: 'Todos os direitos reservados.',
-    backToTopLabel: 'Voltar ao topo',
-    backToTopHref: '#inicio',
-    whatsapp: {
-      regionLabel: 'Atendimento pelo WhatsApp',
-      closeLabel: 'Fechar convite',
-      image: { src: '/images/eduardo-ferreira-560.webp', width: 48, height: 48, alt: '' },
-      senderName: 'Dr. Eduardo Ferreira',
-      message: 'Olá! Precisa de orientação? Vamos conversar pelo WhatsApp.',
-      actionLabel: 'Iniciar conversa',
-      buttonLabel: 'Abrir atendimento pelo WhatsApp',
+    "fallbacks": {
+      "quote": "Comentário não disponível",
+      "name": "Usuário do Google",
+      "details": "Não disponível",
+      "avatar": "/images/google-icon.png",
+      "avatarPosition": "center",
+      "publishedAtLabel": "Data não disponível"
     },
+    "manualItems": [
+      {
+        "quote": "Excelente advogada. Além de ser super profissional, confiável, sempre atenciosa e esclareceu todas as minhas dúvidas.",
+        "name": "Cliente Verificado",
+        "details": "Fonte: Cronoshare · relato fornecido",
+        "rating": 5,
+        "avatar": "/images/google-icon.png",
+        "avatarPosition": "center"
+      }
+    ]
   },
-  seo: {
-    siteUrl: 'https://ferreiradefesa.com.br',
-    locale: 'pt_BR',
-    language: 'pt-BR',
-    homePageTitle: 'Defesa em Crimes Financeiros e Corrupção',
-    defaultTitle: 'Advocacia Criminal Estratégica | Ferreira Defesa',
-    titleTemplate: '%s | Ferreira Defesa',
-    defaultDescription: 'Defesa estratégica em crimes financeiros, corrupção e Direito Penal Econômico, com atendimento técnico, pessoal e sigiloso.',
-    defaultImage: '/images/hero-legal-1672.webp',
-    defaultImageAlt: 'Equipe jurídica da Ferreira Defesa em atendimento',
-    defaultImageWidth: 1672,
-    defaultImageHeight: 942,
-    themeColor: '#111318',
-    favicon: '/favicon.svg',
-    keywords: ['advogado criminalista', 'Direito Penal Econômico', 'crimes financeiros', 'defesa criminal empresarial', 'corrupção e improbidade'],
-    areaServed: 'Brasil',
-    knowsAbout: ['Direito Penal Econômico', 'Crimes Financeiros', 'Crimes Tributários', 'Lavagem de Dinheiro', 'Corrupção e Improbidade', 'Defesa Criminal Empresarial'],
-    sitemap: [{ path: '/', changeFrequency: 'monthly', priority: 1 }],
+  "faqSection": {
+    "id": "faq",
+    "eyebrow": "Dúvidas frequentes",
+    "title": "Informação clara desde o",
+    "highlightedTitle": "primeiro contato",
+    "description": "Informações gerais sobre o atendimento. A orientação para cada caso depende de análise individual.",
+    "ctaLabel": "Falar sobre meu caso",
+    "items": [
+      {
+        "question": "Quais são as áreas de atuação da Dra. Christina?",
+        "answer": "A atuação abrange Direito Previdenciário, Direito do Trabalho e Direito de Família e Sucessões, incluindo demandas relacionadas ao INSS, relações de trabalho e questões familiares."
+      },
+      {
+        "question": "Onde é realizado o atendimento presencial?",
+        "answer": "O escritório está na Rua Santo Amaro, 544, Bela Vista, São Paulo · SP, CEP 01315-000. Entre em contato pelo WhatsApp para agendar e confirmar o horário."
+      },
+      {
+        "question": "Posso ser atendido online fora de São Paulo?",
+        "answer": "Sim. Há atendimento online em todo o Brasil. O formato e as etapas são combinados conforme a necessidade do caso."
+      },
+      {
+        "question": "Quais documentos preciso separar para o atendimento?",
+        "answer": "Os documentos variam conforme a demanda. No primeiro contato, apresente um resumo da situação e informe eventuais prazos; a advogada orientará quais registros serão necessários para a análise."
+      },
+      {
+        "question": "Como agendar uma consulta?",
+        "answer": "Use os botões de WhatsApp do site para conversar com a Dra. Christina e consultar disponibilidade, formato e condições do atendimento."
+      },
+      {
+        "question": "A consulta garante um resultado no processo?",
+        "answer": "Não. A análise permite esclarecer alternativas e possíveis riscos. Cada demanda depende dos fatos, dos documentos e das decisões dos órgãos competentes, sem garantia de resultado."
+      }
+    ]
   },
-  videoSection: {
-    // Use videoId para YouTube ou videoUrl para um arquivo local.
-    enabled: true,
-    eyebrow: 'Apresentação institucional',
-    title: 'Conheça nossa atuação',
-    highlightedTitle: 'de perto.',
-    description: 'Um espaço para apresentar a experiência, a forma de atendimento e os valores que orientam cada atuação.',
-    provider: 'youtube',
-    videoId: 'R5eWRKTx0M0',
-    videoUrl: '',
-    poster: 'https://i.ytimg.com/vi/R5eWRKTx0M0/maxresdefault.jpg',
-    posterAlt: 'Capa do vídeo institucional',
-    playLabel: 'Assistir apresentação',
-    caption: 'Vídeo institucional',
+  "footer": {
+    "eyebrow": "Atendimento presencial e online",
+    "title": "Vamos conversar sobre",
+    "highlightedTitle": "seus direitos?",
+    "description": "Direito Previdenciário, do Trabalho e de Família e Sucessões. Rua Santo Amaro, 544, Bela Vista, São Paulo · SP. WhatsApp: (11) 93070-8264.",
+    "links": [
+      {
+        "href": "#sobre",
+        "label": "A advogada"
+      },
+      {
+        "href": "#especialidades",
+        "label": "Áreas de atuação"
+      },
+      {
+        "href": "#diferenciais",
+        "label": "Atendimento"
+      },
+      {
+        "href": "#faq",
+        "label": "Dúvidas"
+      },
+      {
+        "href": "https://www.instagram.com/adv_christinamartins",
+        "label": "Instagram"
+      },
+      {
+        "href": "https://share.google/IJa9eUEXaCCS09uLJ",
+        "label": "Google Maps"
+      },
+      {
+        "href": "https://www.cronoshare.com.br/servicos/advogado-trabalhista/sao-paulo/sao-paulo/b/centro",
+        "label": "Fonte do depoimento"
+      }
+    ],
+    "copyrightSuffix": "Todos os direitos reservados.",
+    "backToTopLabel": "Voltar ao topo",
+    "backToTopHref": "#inicio",
+    "whatsapp": {
+      "regionLabel": "Atendimento pelo WhatsApp",
+      "closeLabel": "Fechar convite",
+      "image": {
+        "src": "/images/christina-martins-avatar.webp",
+        "width": 48,
+        "height": 48,
+        "alt": "Dra. Christina Martins"
+      },
+      "senderName": "Dra. Christina Martins",
+      "message": "Olá! Gostaria de agendar um atendimento? Converse comigo pelo WhatsApp.",
+      "actionLabel": "Iniciar conversa",
+      "buttonLabel": "Abrir atendimento pelo WhatsApp"
+    }
   },
-  locationSection: {
-    // Substitua address e mapQuery pelo endereço completo de cada novo projeto.
-    enabled: true,
-    eyebrow: 'Localização',
-    title: 'Encontre nosso',
-    highlightedTitle: 'escritório.',
-    description: 'Consulte nossa localização e planeje sua visita. Para atendimento presencial, entre em contato para confirmar o horário.',
-    address: 'São Paulo, SP, Brasil',
-    mapQuery: 'São Paulo, SP, Brasil',
-    mapTitle: 'Localização da Ferreira Defesa em São Paulo',
-    directionsLabel: 'Abrir no Google Maps',
+  "seo": {
+    "siteUrl": "https://christinamartinsadvocacia.feito.website",
+    "locale": "pt_BR",
+    "language": "pt-BR",
+    "homePageTitle": "Previdenciário, Trabalhista e Família em São Paulo",
+    "defaultTitle": "Christina Martins Advogada | Previdenciário, Trabalhista e Família em São Paulo",
+    "titleTemplate": "%s | Christina Martins Advogada",
+    "defaultDescription": "Christina Martins Advogada: Direito Previdenciário, Trabalhista e de Família. Atendimento na Bela Vista, São Paulo, e online em todo o Brasil.",
+    "defaultImage": "/images/christina-martins-og.webp",
+    "defaultImageAlt": "Christina Aguiar Martins Advogada · Previdenciário, Trabalhista, Família e Sucessões. São Paulo e atendimento online em todo o Brasil.",
+    "defaultImageWidth": 1200,
+    "defaultImageHeight": 630,
+    "themeColor": "#1e293b",
+    "favicon": "/images/christina-martins-favicon.svg",
+    "keywords": [
+      "advogada previdenciária são paulo",
+      "advogado trabalhista bela vista sp",
+      "pedido loas inss",
+      "aposentadoria inss",
+      "advogado de familia sao paulo",
+      "reversão de justa causa"
+    ],
+    "areaServed": "São Paulo - SP e Atendimento Online em todo o Brasil",
+    "knowsAbout": [
+      "Direito Previdenciário",
+      "LOAS/BPC",
+      "Aposentadorias e Pensões",
+      "Direito do Trabalho",
+      "Direito de Família",
+      "Divórcio e Inventário"
+    ],
+    "sitemap": [
+      {
+        "path": "/",
+        "changeFrequency": "monthly",
+        "priority": 1
+      }
+    ]
   },
-  aiDiscovery: {
-    // Desative apenas se este projeto não puder ser descoberto por agentes.
-    enabled: true,
-    llmsPath: '/llms.txt',
-    markdownPath: '/index.md',
-    summary: 'Escritório de advocacia criminal com atuação estratégica em Direito Penal Econômico, crimes financeiros e defesa criminal empresarial no Brasil.',
-    usageNote: 'O conteúdo é institucional e informativo. Não substitui análise jurídica individual e não deve ser interpretado como promessa de resultado.',
+  "videoSection": {
+    "enabled": false,
+    "eyebrow": "Apresentação institucional",
+    "title": "Conheça minha",
+    "highlightedTitle": "atuação.",
+    "description": "Apresentação da Dra. Christina Aguiar Martins.",
+    "provider": "youtube",
+    "videoId": "",
+    "videoUrl": "",
+    "poster": "",
+    "posterAlt": "",
+    "playLabel": "Assistir apresentação",
+    "caption": ""
   },
-  deployment: {
-    // auto conecta o GitHub quando possível e usa upload direto quando o repositório pertence a outra conta.
-    mode: 'auto',
-    // O resultado será https://eduardoferreira.feito.website.
-    projectName: 'eduardo-ferreira',
-    subdomain: 'eduardoferreira',
-    baseDomain: 'feito.website',
-    // Pode ser sobrescrito pela variável VERCEL_CNAME_TARGET.
-    cnameTarget: 'cname.vercel-dns-0.com',
+  "locationSection": {
+    "enabled": true,
+    "eyebrow": "Localização",
+    "title": "Atendimento na",
+    "highlightedTitle": "Bela Vista.",
+    "description": "Atendimento presencial em São Paulo mediante agendamento e online em todo o Brasil. Confirme o horário pelo WhatsApp antes de sua visita.",
+    "address": "Rua Santo Amaro, 544 · Bela Vista, São Paulo · SP, CEP 01315-000",
+    "mapQuery": "Christina Aguiar Martins Advogada R. Santo Amaro, 544 - Bela Vista, São Paulo - SP",
+    "mapTitle": "Localização de Christina Aguiar Martins Advogada na Bela Vista, São Paulo",
+    "directionsLabel": "Abrir no Google Maps"
   },
+  "aiDiscovery": {
+    "enabled": true,
+    "llmsPath": "/llms.txt",
+    "markdownPath": "/index.md",
+    "summary": "Christina Aguiar Martins Advogada atua em Direito Previdenciário, Direito do Trabalho e Direito de Família e Sucessões, na Rua Santo Amaro, 544, Bela Vista, São Paulo · SP, e online em todo o Brasil. Contato pelo WhatsApp: +55 11 93070-8264. Instagram: https://www.instagram.com/adv_christinamartins.",
+    "usageNote": "Conteúdo institucional e informativo, baseado nos dados fornecidos. Christina Aguiar Martins: OAB/SP 360.536. Não substitui análise jurídica individual e não representa promessa de resultado."
+  },
+  "deployment": {
+    "mode": "auto",
+    "projectName": "christina-martins-advocacia",
+    "subdomain": "christinamartinsadvocacia",
+    "baseDomain": "feito.website",
+    "cnameTarget": "cname.vercel-dns-0.com"
+  }
 } satisfies SiteConfig;

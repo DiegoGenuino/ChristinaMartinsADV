@@ -3,7 +3,20 @@ import test from 'node:test';
 import { siteConfig } from '../src/config/site';
 import { resolveReviews } from '../src/services/google-reviews';
 
-const createSection = () => structuredClone(siteConfig.reviewsSection);
+// Fixtures de teste independentes do conteúdo autorizado para o site do cliente.
+const createSection = () => ({
+  ...structuredClone(siteConfig.reviewsSection),
+  enabled: true,
+  source: 'google' as const,
+  manualItems: Array.from({ length: 3 }, (_, index) => ({
+    quote: `Comentário de teste ${index + 1}`,
+    name: `Autor de teste ${index + 1}`,
+    details: 'Não disponível',
+    rating: 5,
+    avatar: '/images/google-icon.png',
+    avatarPosition: 'center',
+  })),
+});
 
 test('usa o fallback manual quando a chave da API não foi configurada', async () => {
   const section = createSection();
